@@ -5,13 +5,13 @@ install_requirements:
 	@pip install -r requirements.txt
 
 check_code:
-	@flake8 scripts/* my-toolkit/*.py
+	@flake8 scripts/* mytoolkit/*.py
 
 black:
-	@black scripts/* my-toolkit/*.py
+	@black scripts/* mytoolkit/*.py
 
 test:
-	@coverage run -m pytest tests/*.py
+	@coverage run -m pytest tests/test_*.py
 	@coverage report -m --omit="${VIRTUAL_ENV}/lib/python*"
 
 ftest:
