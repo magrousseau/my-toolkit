@@ -18,7 +18,3 @@ def clean_text(text):
   # lemmatizer = WordNetLemmatizer()
   # text = ' '.join([lemmatizer.lemmatize(word) for word in text])
   return text
-
-
-
-
